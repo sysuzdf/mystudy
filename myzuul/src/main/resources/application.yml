@@ -1,0 +1,22 @@
+server:
+ port: 9000
+
+#eureka regist
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8880/eureka/
+
+zuul:
+ routes:
+  myservice-p1:
+   path: /hello1/**
+   serviceId: myservice-p1
+  myservice-p2:
+   path: /hello2/**
+   serviceId: myservice-p2
+  myservice-p3:
+   path: /hello3/**
+   url: http://localhost:8883
+   
+   
