@@ -12,7 +12,7 @@ import com.myapp.dto.MyClientBean1;
  * @author zhoudefeng 2017年8月14日 下午4:33:54
  */
 
-@FeignClient(name="myservice-p2")
+@FeignClient(name="myservice")
 public interface MyClient {
 	
 	@RequestMapping(value = "/hello", method = RequestMethod.POST)
